@@ -9,8 +9,6 @@ export async function POST(request: Request, response: Response) {
 
     const students = await axios.get(get);
 
-    console.log(newStudent, '@@@@');
-
     if (
       students?.data?.find((student: any) => {
         if (student.personal_number == newStudent.personal_number) {

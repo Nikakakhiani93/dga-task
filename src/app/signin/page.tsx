@@ -1,10 +1,12 @@
 'use client';
 
 import React, { useState } from 'react';
+import { redirect, useRouter } from 'next/navigation';
 
 import Link from 'next/link';
 
 export default function Page() {
+  const router = useRouter();
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
@@ -22,6 +24,8 @@ export default function Page() {
 
     if (response.message === 'User logged in') {
       localStorage.setItem('isAuthed', 'authed');
+      // redirect('/dashboard');
+      router.push('/dashboard');
     } else {
       localStorage.removeItem('isAuthed');
     }
