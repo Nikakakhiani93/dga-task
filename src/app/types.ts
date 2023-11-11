@@ -6,3 +6,11 @@ export type Tcourse = {
   starDate: string;
   endDate: string;
 };
+
+export type Tstudent = {
+  id: number;
+  name: string;
+  email: string;
+  phone: string;
+  personalNumber: string;
+};

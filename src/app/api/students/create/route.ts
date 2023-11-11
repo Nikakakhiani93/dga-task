@@ -12,7 +12,6 @@ export async function POST(request: Request, response: Response) {
     if (
       students?.data?.find((student: any) => {
         if (student.personal_number == newStudent.personal_number) {
-          console.log(student, newStudent);
         }
         return student.personal_number == newStudent.personal_number;
       })

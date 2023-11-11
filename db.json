@@ -1,46 +1,11 @@
 {
   "students": [
     {
-      "id": 4,
-      "name": "Noah Williams",
-      "email": "noah.williams@example.com",
-      "phone": "5550102",
-      "personal_number": "987654323"
-    },
-    {
-      "id": 5,
-      "name": "Noah Williams",
-      "email": "noah.williams@example.com",
-      "phone": "5550102",
-      "personal_number": "987654323"
-    },
-    {
-      "id": 6,
-      "name": "Noah Williams",
-      "email": "noah.williams@example.com",
-      "phone": "5550102",
-      "personal_number": "987654323"
-    },
-    {
-      "name": "Raj2",
-      "email": "test@test.com2",
-      "phone": "12345678902",
-      "personal_number": "12345678902",
-      "id": 7
-    },
-    {
-      "id": 9,
-      "name": "Noah Williams",
-      "email": "noah.williams@example.com",
-      "phone": "5550102",
-      "personal_number": "987654323"
-    },
-    {
-      "fullName": "asdasdsad",
-      "email": "asdasdasd@asd.com",
-      "phone": "12312321",
-      "pn": "123123123",
-      "id": 10
+      "id": 1,
+      "name": "12",
+      "email": "12@s.s",
+      "phone": "123",
+      "personal_number": "1234"
     }
   ],
   "teachers": [

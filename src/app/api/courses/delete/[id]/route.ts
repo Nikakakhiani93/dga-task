@@ -2,7 +2,6 @@ import axios from 'axios';
 
 export async function DELETE(request: Request, { params }: any) {
   try {
-    console.log(params, 'params');
     const id = params.id;
     const DELETE = 'http://localhost:3001/courses/' + id;
 
