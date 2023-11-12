@@ -1,7 +1,6 @@
 'use client';
 
 import React, { FC, useState } from 'react';
-import { Tstudent } from '@/app/types';
 import { useRouter } from 'next/navigation';
 import StudentForm from './StudentForm';
 import Image from 'next/image';

@@ -8,11 +8,18 @@
       "id": 1
     },
     {
+      "id": 2,
       "name": "1232213alkd asdlk ",
       "email": "asdasd@asd.coasd",
       "phone": "12312312312",
-      "personal_number": "1231231312312312",
-      "id": 2
+      "personal_number": "1232"
+    },
+    {
+      "name": "Nika Kakhiani",
+      "email": "nikakakhiani93@gmail.com",
+      "phone": "8664119401",
+      "personal_number": "w3t643wt",
+      "id": 3
     }
   ],
   "teachers": [

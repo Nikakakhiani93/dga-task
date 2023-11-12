@@ -69,7 +69,7 @@ const StudentForm: FC<StudentProps> = ({ student }) => {
   };
 
   return (
-    <div>
+    <div className='px-6'>
       <div className='py-[10px] w-full flex justify-between items-center  border-b-2 border-[#E5E5E5]	'>
         <h3 className='text-[22px] font-medium'>Students List</h3>
         <div className='flex align-center'>

@@ -2,7 +2,7 @@ export type Tcourse = {
   id: number;
   courseName: string;
   courseDifficulty: string;
-  teacherId: number;
+  teacherId: string;
   starDate: string;
   endDate: string;
 };
