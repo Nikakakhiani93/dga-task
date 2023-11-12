@@ -21,7 +21,7 @@ export default function DashboardLayout({
   // }
 
   const pathname = usePathname();
-  // console.log(pathname, 'pathh');
+
   return (
     <section className='container mx-auto px-4 flex '>
       <aside className='w-[270px] h-[900px] bg-[#f2eae1] flex flex-col w-64 h-screen px-4 py-8 overflow-y-auto border-r rtl:border-r-0 rtl:border-l z-10'>
@@ -119,7 +119,7 @@ export default function DashboardLayout({
           </Link>
         </div>
       </aside>
-      <div className='w-64'>{children}</div>
+      <div className='w-full bg-[#F8F8F8]'>{children}</div>
     </section>
   );
 }

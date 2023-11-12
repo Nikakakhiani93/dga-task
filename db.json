@@ -1,11 +1,18 @@
 {
   "students": [
     {
-      "id": 1,
-      "name": "12",
-      "email": "12@s.s",
-      "phone": "123",
-      "personal_number": "1234"
+      "name": "Nika Kakhiani",
+      "email": "nikakakhiani93@gmail.com",
+      "phone": "8664119401",
+      "personal_number": "112321312",
+      "id": 1
+    },
+    {
+      "name": "1232213alkd asdlk ",
+      "email": "asdasd@asd.coasd",
+      "phone": "12312312312",
+      "personal_number": "1231231312312312",
+      "id": 2
     }
   ],
   "teachers": [

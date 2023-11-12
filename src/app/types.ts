@@ -12,5 +12,5 @@ export type Tstudent = {
   name: string;
   email: string;
   phone: string;
-  personalNumber: string;
+  personal_number: string;
 };

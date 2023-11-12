@@ -15,7 +15,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang='en'>
+    <html lang='en' className='bg-[#F8F8F8]'>
       <body className={montserat.className}>{children}</body>
     </html>
   );

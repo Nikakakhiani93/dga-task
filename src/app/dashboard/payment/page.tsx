@@ -3,7 +3,7 @@ import Student from '../../../components/Student';
 import StudentForm from '../../../components/StudentForm';
 import { Tstudent } from '@/app/types';
 async function getData() {
-  const res = await fetch('http://localhost:3000/api/students', {
+  const res = await fetch('http://localhost:3000/api/payment', {
     cache: 'no-store',
   });
 
@@ -14,8 +14,6 @@ export default async function Page() {
   const data = await getData();
   return (
     <main>
-      <StudentForm />
-
       <div className='flex flex-col mt-8'>
         <div className='py-2 -my-2 overflow-x-auto sm:-mx-6 sm:px-6 lg:-mx-8 '>
           <div className='inline-block min-w-full h-[740px]  overflow-y-scroll align-middle'>
@@ -39,18 +37,17 @@ export default async function Page() {
                 </tr>
               </thead>
               <tbody className='bg-[#ffffff] '>
-                {data.map((c: Tstudent) => (
+                {data.map((c: any) => (
                   <tr
                     className='rounded-[8px] border-8 border-t-4 border-[#F8F8F8]'
                     key={c.id}
                   >
-                    <Student
-                      id={c.id}
-                      name={c.name}
-                      email={c.email}
-                      phone={c.phone}
-                      personalNumber={c.personal_number}
-                    />
+                    <td>{c.Name}</td>
+                    <td>{c.Payment_Schedule}</td>
+                    <td>{c.Bill_Number}</td>
+                    <td>{c.Amount_Paid}</td>
+                    <td>{c.Balance_amount}</td>
+                    <td>{c.Date}</td>
                   </tr>
                 ))}
               </tbody>
