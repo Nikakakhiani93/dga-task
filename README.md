@@ -1,3 +1,8 @@
+To log in please use bellow mentioned credentials:
+
+email: SuperAdmin@gmail.com
+password: 123456
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
