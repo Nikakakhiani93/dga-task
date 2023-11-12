@@ -1,25 +1,18 @@
 {
   "students": [
     {
+      "id": 18,
       "name": "Nika Kakhiani",
       "email": "nikakakhiani93@gmail.com",
       "phone": "8664119401",
-      "personal_number": "112321312",
-      "id": 1
-    },
-    {
-      "id": 2,
-      "name": "1232213alkd asdlk ",
-      "email": "asdasd@asd.coasd",
-      "phone": "12312312312",
-      "personal_number": "1232"
+      "personal_number": "00000000001"
     },
     {
       "name": "Nika Kakhiani",
       "email": "nikakakhiani93@gmail.com",
       "phone": "8664119401",
-      "personal_number": "w3t643wt",
-      "id": 3
+      "personal_number": "123123312",
+      "id": 19
     }
   ],
   "teachers": [
@@ -39,9 +32,9 @@
   "courses": [
     {
       "id": 3,
-      "course_name": "t34t34sg",
-      "course_difficulty": "t34gfew34g",
-      "teacher_id": "",
+      "course_name": "course 1",
+      "course_difficulty": "course 1",
+      "teacher_id": "course 1",
       "start_date": "275760-03-04",
       "end_date": "275760-03-04"
     }
@@ -62,10 +55,10 @@
       "student_id": 1,
       "course_id": 1,
       "Name": "Aria Smith",
-      "Payment Schedule": "First",
-      "Bill Number": "3243354656",
-      "Amount Paid": "1000",
-      "Balance amount": "1000",
+      "Payment_Schedule": "First",
+      "Bill_Number": "3243354656",
+      "Amount_Paid": "1000",
+      "Balance_amount": "1000",
       "Date": "2020-01-01"
     },
     {
@@ -73,10 +66,10 @@
       "student_id": 2,
       "course_id": 2,
       "Name": "Liam Johnson",
-      "Payment Schedule": "First",
-      "Bill Number": "3243354656",
-      "Amount Paid": "1000",
-      "Balance amount": "1000",
+      "Payment_Schedule": "First",
+      "Bill_Number": "3243354656",
+      "Amount_Paid": "1000",
+      "Balance_amount": "1000",
       "Date": "2020-01-01"
     },
     {
@@ -84,10 +77,10 @@
       "student_id": 3,
       "course_id": 3,
       "Name": "Noah Williams",
-      "Payment Schedule": "First",
-      "Bill Number": "3243354656",
-      "Amount Paid": "1000",
-      "Balance amount": "1000",
+      "Payment_Schedule": "SASD",
+      "Bill_Number": "3243354656",
+      "Amount_Paid": "1000",
+      "Balance_amount": "1000",
       "Date": "2020-01-01"
     },
     {
@@ -95,10 +88,10 @@
       "student_id": 4,
       "course_id": 4,
       "Name": "Noah Williams",
-      "Payment Schedule": "First",
-      "Bill Number": "3243354656",
-      "Amount Paid": "1000",
-      "Balance amount": "1000",
+      "Payment_Schedule": "First",
+      "Bill_Number": "3243354656",
+      "Amount_Paid": "1000",
+      "Balance_amount": "1000",
       "Date": "2020-01-01"
     }
   ]

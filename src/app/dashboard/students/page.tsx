@@ -18,7 +18,7 @@ export default async function Page() {
     <>
       <Header />
       <main>
-        <StudentForm />
+        <StudentForm isEdit={false} />
 
         <div className='flex flex-col px-6 mt-8'>
           <div className='py-2 -my-2 overflow-x-auto sm:-mx-6 sm:px-6 lg:-mx-8 '>

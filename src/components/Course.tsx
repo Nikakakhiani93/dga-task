@@ -8,7 +8,16 @@ import avatar from '../app/assets/images/profile.jpeg';
 import edit from '../app/assets/icons/pen.svg';
 import remove from '../app/assets/icons/trash.svg';
 
-const Course: FC<Tcourse> = ({
+interface ICourse {
+  id: number;
+  courseName: string;
+  courseDifficulty: string;
+  teacherId: string;
+  starDate: string;
+  endDate: string;
+}
+
+const Course: FC<ICourse> = ({
   id,
   courseName,
   courseDifficulty,
@@ -16,9 +25,7 @@ const Course: FC<Tcourse> = ({
   starDate,
   endDate,
 }) => {
-  console.log(teacherId);
   const [showEdit, setShowEdit] = useState(false);
-
   const router = useRouter();
 
   const handleDelete = async (courseID: number) => {
@@ -41,6 +48,7 @@ const Course: FC<Tcourse> = ({
             start_date: starDate,
             end_date: endDate,
           }}
+          isEdit={false}
         />
       )}
 
@@ -104,18 +112,6 @@ const Course: FC<Tcourse> = ({
           />
         </a>
       </td>
-
-      {/* <div> */}
-      {/* <p>{courseName}</p>
-        <p>{courseDifficulty}</p>
-        <p>{teacherId}</p>
-        <p>{starDate}</p>
-        <p>{endDate}</p> */}
-      {/* <div onClick={() => setShowEdit(!showEdit)}>
-          {showEdit ? 'CLOSE EDIT' : 'EDIT'}
-        </div>
-        <div onClick={() => handleDelete(id)}>DELETE</div> */}
-      {/* </div> */}
     </>
   );
 };

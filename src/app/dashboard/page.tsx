@@ -48,7 +48,7 @@ export default function Page({ children }: { children: React.ReactNode }) {
           <div className='flex flex-wrap -mx-6'>
             <div className='w-full px-6 sm:w-1/2 xl:w-1/3 '>
               <Link href={'/dashboard/students'}>
-                <div className='flex flex-col items-center bg-[#F0F9FF] px-5 py-5 bg-white rounded-md shadow-sm'>
+                <div className='flex flex-col items-center bg-[#F0F9FF] px-5 py-5 rounded-md shadow-sm'>
                   <div className='w-full p-3 '>
                     <Image
                       className='mb-2'
@@ -71,7 +71,7 @@ export default function Page({ children }: { children: React.ReactNode }) {
 
             <div className='w-full px-6 sm:w-1/2 xl:w-1/3'>
               <Link href={'/dashboard/courses'}>
-                <div className='flex flex-col items-center bg-[#FEF6FB] px-5 py-5 bg-white rounded-md shadow-sm'>
+                <div className='flex flex-col items-center bg-[#FEF6FB] px-5 py-5 rounded-md shadow-sm'>
                   <div className='w-full p-3 '>
                     <Image
                       className='mb-2'
@@ -94,8 +94,8 @@ export default function Page({ children }: { children: React.ReactNode }) {
 
             <div className='w-full px-6 sm:w-1/2 xl:w-1/3'>
               <Link href={'/dashboard/payment'}>
-                <div className='flex flex-col items-center bg-[#FEFBEC] px-5 py-5 bg-white rounded-md shadow-sm'>
-                  <div className='p-3 '>
+                <div className='flex flex-col items-center bg-[#FEFBEC] px-5 py-5 rounded-md shadow-sm'>
+                  <div className='w-full p-3 '>
                     <Image
                       className='mb-2'
                       src={paymentDashboard}

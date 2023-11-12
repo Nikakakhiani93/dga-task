@@ -1,10 +1,10 @@
 export type Tcourse = {
   id: number;
-  courseName: string;
-  courseDifficulty: string;
-  teacherId: string;
-  starDate: string;
-  endDate: string;
+  course_name: string;
+  course_difficulty: string;
+  teacher_id: string;
+  start_date: string;
+  end_date: string;
 };
 
 export type Tstudent = {
@@ -13,4 +13,14 @@ export type Tstudent = {
   email: string;
   phone: string;
   personal_number: string;
+};
+
+export type Tpayment = {
+  id: 1;
+  Name: string;
+  Payment_Schedule: string;
+  Bill_Number: string;
+  Amount_Paid: string;
+  Balance_amount: string;
+  Date: string;
 };

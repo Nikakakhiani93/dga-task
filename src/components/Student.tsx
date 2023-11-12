@@ -27,10 +27,16 @@ const Student: FC<IStudent> = ({ id, name, email, phone, personalNumber }) => {
     });
   };
 
+  const handleEditClick = (isOpen: boolean) => {
+    setShowEdit(false);
+  };
+
   return (
     <>
       {showEdit && (
         <StudentForm
+          click={(e: boolean) => handleEditClick(e)}
+          isEdit={true}
           student={{
             id: id,
             name: name,
@@ -78,16 +84,14 @@ const Student: FC<IStudent> = ({ id, name, email, phone, personalNumber }) => {
       </td>
 
       <td className='px-6 py-4 text-sm font-medium leading-5 text-right '>
-        <a
-          href='#'
-          className='flex text-indigo-600 hover:text-indigo-900'
-          onClick={() => setShowEdit(!showEdit)}
-        >
-          {showEdit ? (
-            <Image src={edit} alt='edit' width={20} height={20} />
-          ) : (
-            <Image src={edit} alt='edit' width={20} height={20} />
-          )}
+        <p className='flex text-indigo-600 hover:text-indigo-900'>
+          <Image
+            src={edit}
+            alt='edit'
+            width={20}
+            height={20}
+            onClick={() => setShowEdit(!showEdit)}
+          />
 
           <Image
             onClick={() => handleDelete(id)}
@@ -97,7 +101,7 @@ const Student: FC<IStudent> = ({ id, name, email, phone, personalNumber }) => {
             width={20}
             height={20}
           />
-        </a>
+        </p>
       </td>
     </>
   );
