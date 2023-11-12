@@ -32,14 +32,21 @@ const Course: FC<ICourse> = ({
     fetch(`http://localhost:3000/api/courses/delete/${courseID}`, {
       method: 'DELETE',
     }).then(() => {
+      setShowEdit(false);
+
       router.refresh();
     });
+  };
+
+  const handleEditClick = () => {
+    setShowEdit(false);
   };
 
   return (
     <>
       {showEdit && (
         <CourseForm
+          click={() => handleEditClick()}
           course={{
             id: id,
             course_name: courseName,
@@ -48,7 +55,7 @@ const Course: FC<ICourse> = ({
             start_date: starDate,
             end_date: endDate,
           }}
-          isEdit={false}
+          isEdit={true}
         />
       )}
 
@@ -91,8 +98,7 @@ const Course: FC<ICourse> = ({
       <td className='px-6 py-4 text-sm leading-5 text-gray-500 '>{endDate}</td>
 
       <td className='px-6 py-4 text-sm font-medium leading-5 text-right '>
-        <a
-          href='#'
+        <p
           className='flex text-indigo-600 hover:text-indigo-900'
           onClick={() => setShowEdit(!showEdit)}
         >
@@ -110,7 +116,7 @@ const Course: FC<ICourse> = ({
             width={20}
             height={20}
           />
-        </a>
+        </p>
       </td>
     </>
   );

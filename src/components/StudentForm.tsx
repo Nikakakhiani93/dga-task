@@ -59,6 +59,7 @@ const StudentForm: FC<StudentProps> = ({ student, isEdit, click }) => {
       data.phone.length < 1 ||
       data.personal_number.length < 1
     ) {
+      return;
     }
 
     if (click) {
