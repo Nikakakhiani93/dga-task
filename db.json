@@ -37,6 +37,14 @@
       "teacher_id": "course 1",
       "start_date": "275760-03-04",
       "end_date": "275760-03-04"
+    },
+    {
+      "course_name": "sdfghdfh",
+      "course_difficulty": "1233",
+      "teacher_id": "",
+      "start_date": "2023-11-27",
+      "end_date": "2023-11-25",
+      "id": 4
     }
   ],
   "users": [
